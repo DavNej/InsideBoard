@@ -23,12 +23,12 @@ class Change():
       self.TOTAL_AMOUNT = int(argv[1])
     
     except IndexError as err:
-      logger.warn(err)
-      logger.warn('No amount was entered')
+      logger.warning(err)
+      logger.warning('No amount was entered')
       self.getAnInt()
 
     except ValueError as err:
-      logger.warn(f'Amount entered was not an int - {err}')
+      logger.warning(f'Amount entered was not an int - {err}')
       self.getAnInt()
 
   def getAnInt(self):
@@ -38,7 +38,7 @@ class Change():
       try:
         self.TOTAL_AMOUNT = int(input())
       except ValueError as err:
-        logger.warn(f'Amount entered was not an int - {err}')
+        logger.warning(f'Amount entered was not an int - {err}')
         self.getAnInt()
 
 
