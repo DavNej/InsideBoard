@@ -23,3 +23,7 @@ To run the tests run:
 ~~~bash
 python -m unittest calcul_de_taxes_test.py
 ~~~
+
+###### Notes:
+No function was written to check the user's input.
+The program was not written in OOP though it could have
