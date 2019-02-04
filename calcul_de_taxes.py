@@ -166,7 +166,10 @@ def print_bill(cart):
 
 def main():
   cart = get_products_from_user()
+  
   cart = [ parse_cart_item(item) for item in cart ]
+  logger.info('Cart parsed successfully')
+
   print_bill(cart)
 
 if __name__ == '__main__':
