@@ -28,7 +28,7 @@ class Change():
     """.format(self.coin2, self.bill5, self.bill10)
 
 
-  def ask_amount_to_change(self, amount=None):
+  def ask_amount_to_change(self):
     try:
       self.TOTAL_AMOUNT = abs(int(argv[1]))
     except IndexError as err:
